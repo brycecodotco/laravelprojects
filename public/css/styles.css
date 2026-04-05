@@ -1,0 +1,207 @@
+
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --accent: #38bdf8;
+    --success: #10b981;
+    --danger: #ef4444;
+    --border: #334155;
+    --input-bg: #0f172a;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+h1, h2, h3 { margin-top: 0; font-weight: 600; }
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+label { 
+    display: block; 
+    margin-bottom: 8px; 
+    color: var(--text-dim); 
+    font-size: 14px; 
+}
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.action-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+
+.btn-edit {
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #60a5fa;
+    text-decoration: none;
+    border: 1px solid rgba(96, 165, 250, 0.4);
+    transition: all 0.2s;
+}
+
+.btn-edit:hover {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: #60a5fa;
+}
+
+
+.btn-delete {
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #f87171;
+    background: transparent;
+    border: 1px solid rgba(248, 113, 113, 0.4);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-delete:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+}
+
+.btn-success {
+    background: #10b981;
+    color: white;
+}
+.btn-success:hover {
+    background: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+
+.btn-primary {
+    background: #3b82f6;
+    color: white;
+}
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+
+.btn-secondary {
+    background: #475569;
+    color: white;
+}
+.btn-secondary:hover {
+    background: #334155;
+}
+
+
+.btn-danger {
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+.btn-danger:hover {
+    background: #ef4444;
+    color: white;
+}
+
+
+.btn-edit {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 12px;
+}
+.btn-edit:hover {
+    text-decoration: underline;
+}
+
+.action-group {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.table-responsive { overflow-x: auto; border-radius: 12px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+}
+
+th {
+    background: rgba(0,0,0,0.2);
+    color: var(--text-dim);
+    text-align: left;
+    padding: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+td { 
+    padding: 16px; 
+    border-bottom: 1px 
+    solid var(--border); 
+}
+
+tr:last-child td { 
+    border-bottom: none; 
+}
